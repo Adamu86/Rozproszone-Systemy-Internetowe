@@ -14,7 +14,7 @@ public class MyServerMain {
                 System.setSecurityManager(new SecurityManager());
             }
 
-            System.setProperty("java.rmi.server.codebase","file:/C:/Users/User/Documents/AdamkaRzeczy/GitHub/RSI/RMIServer/target/classes/org/example");
+            System.setProperty("java.rmi.server.codebase","file:/C:/Users/User/Documents/AdamkaRzeczy/GitHub/RSI/Rozproszone-Systemy-Internetowe/1/RMIServer/target/classes/org/example");
 
             System.out.println("Codebase: " + System.getProperty("java.rmi.server.codebase"));
 
@@ -22,7 +22,7 @@ public class MyServerMain {
 
             MyServerImpl obj1 = new MyServerImpl();
 
-            Naming.rebind("//localhost/ABC", obj1);
+            Naming.rebind("//192.168.0.132/ABC", obj1);
 
             System.out.println("Serwer oczekuje ...");
         } catch (RemoteException | MalformedURLException e) {
