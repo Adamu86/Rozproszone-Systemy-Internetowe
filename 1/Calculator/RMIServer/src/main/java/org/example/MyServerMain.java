@@ -14,7 +14,7 @@ public class MyServerMain {
                 System.setSecurityManager(new SecurityManager());
             }
 
-            System.setProperty("java.rmi.server.codebase","file:/C:/Users/User/Documents/AdamkaRzeczy/GitHub/RSI/Rozproszone-Systemy-Internetowe/1/Calculator/RMIServer/target/classes/org/example");
+            System.setProperty("java.rmi.server.codebase","file:/C:/Users/Adameq/Documents/GitHub/Rozproszone-Systemy-Internetowe/1/Calculator/RMIServer/target/classes/org/example");
 
             System.out.println("Codebase: " + System.getProperty("java.rmi.server.codebase"));
 

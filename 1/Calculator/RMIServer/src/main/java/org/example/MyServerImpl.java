@@ -2,6 +2,8 @@ package org.example;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class MyServerImpl extends UnicastRemoteObject implements MyServerInt {
     protected MyServerImpl() throws RemoteException {
@@ -17,24 +19,24 @@ public class MyServerImpl extends UnicastRemoteObject implements MyServerInt {
         String trimmedOperation = operation.replaceAll("\\s+","");
 
         for (char c : trimmedOperation.toCharArray()) {
-            if (c == '-' && opNum1.toString().isEmpty()) {
-                opNum1.append(c);
-            } else if (c == '-' && !opChar.isEmpty() && opNum2.toString().isEmpty()) {
-                opNum2.append(c);
-            }
-
-            if (c >= '0' && c <= '9' || c == '.') {
+            if ((c >= '0' && c <= '9') || c == '.') {
                 if (opChar.isEmpty()) {
                     opNum1.append(c);
                 } else {
                     opNum2.append(c);
                 }
             } else if (c == '+' || c == '-' || c == '*' || c == '/') {
-                opChar = String.valueOf(c);
-            }
-
-            if ((c < '0' || c > '9') && !opNum2.toString().isEmpty()) {
-                break;
+                if (opNum1.toString().isEmpty() && c == '-') {
+                    opNum1.append(c);
+                } else if (opNum1.toString().equals("-") && c == '-') {
+                    opNum1.setLength(0);
+                } else if (opNum2.toString().isEmpty() && c == '-' && !opChar.isEmpty()) {
+                    opNum2.append(c);
+                } else if (opNum2.toString().equals("-") && c == '-') {
+                    opNum2.setLength(0);
+                } else {
+                    opChar = String.valueOf(c);
+                }
             }
         }
 
@@ -49,7 +51,7 @@ public class MyServerImpl extends UnicastRemoteObject implements MyServerInt {
         }
 
         double resNum1 = Double.parseDouble(opNum1.toString());
-        double resNum2 = Double.parseDouble("-10");
+        double resNum2 = Double.parseDouble(opNum2.toString());
 
         if (resNum2 == 0) {
             System.out.println("Nie wykonano działania: dzielnik jest równy 0.");

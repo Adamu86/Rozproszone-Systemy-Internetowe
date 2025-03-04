@@ -19,7 +19,7 @@ public class MyClientMain {
             while (run) {
                 clear();
 
-                System.out.println("Wprowadź działanie w postaci [liczba1 (operacja) liczba2]:");
+                System.out.println("Wprowadź działanie w postaci [liczba1 {operacja (+ - * /)} liczba2]: ");
 
                 String input = scanner.nextLine();
 

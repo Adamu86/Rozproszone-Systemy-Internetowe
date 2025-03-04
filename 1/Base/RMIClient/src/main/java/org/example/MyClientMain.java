@@ -10,7 +10,7 @@ public class MyClientMain {
         System.setSecurityManager(new SecurityManager());
 
         try {
-            MyServerInt myRemoteObject = (MyServerInt) Naming.lookup("//localhost/ABC");
+            MyServerInt myRemoteObject = (MyServerInt) Naming.lookup("//82.139.170.106/ABC");
 
             String text = "Hallo :-)";
 

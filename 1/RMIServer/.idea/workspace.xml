@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33164a76-e6dd-47bb-b8f1-9664bdb3c6c1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../RMIClient/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIClient/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIClient/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIClient/.idea/git_toolbox_blame.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIClient/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIClient/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIClient/security.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIClient/src/main/java/org/example/MyClientMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIClient/src/main/java/org/example/MyServerInt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MyServerImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MyServerInt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MyServerMain.java" beforeDir="false" />
-    </list>
+    <list default="true" id="33164a76-e6dd-47bb-b8f1-9664bdb3c6c1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +32,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/User/Documents/AdamkaRzeczy/GitHub/RSI/Rozproszone-Systemy-Internetowe/1/Base/RMIServer",
+    "last_opened_file_path": "C:/Users/Adameq/Documents/GitHub/Rozproszone-Systemy-Internetowe/1/Calculator/RMIServer",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -115,6 +94,7 @@
       <workItem from="1741036862878" duration="701000" />
       <workItem from="1741040032293" duration="727000" />
       <workItem from="1741083606967" duration="183000" />
+      <workItem from="1741093451462" duration="126000" />
     </task>
     <servers />
   </component>
