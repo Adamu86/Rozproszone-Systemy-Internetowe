@@ -5,7 +5,7 @@ import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 
-public class MyServerMain {
+public class CalculatorServerMain {
     public static void main(String[] args) {
         try {
             System.setProperty("java.security.policy", "security.policy");
@@ -20,7 +20,7 @@ public class MyServerMain {
 
             LocateRegistry.createRegistry(1099);
 
-            MyServerImpl obj1 = new MyServerImpl();
+            CalculatorServerImpl obj1 = new CalculatorServerImpl();
 
             Naming.rebind("//localhost/ABC", obj1);
 
