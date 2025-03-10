@@ -14,10 +14,6 @@ public class CalculatorServerMain {
                 System.setSecurityManager(new SecurityManager());
             }
 
-            System.setProperty("java.rmi.server.codebase","file:/C:/Users/Adameq/Documents/GitHub/Rozproszone-Systemy-Internetowe/1/Calculator/RMIServer/target/classes/org/example");
-
-            System.out.println("Codebase: " + System.getProperty("java.rmi.server.codebase"));
-
             LocateRegistry.createRegistry(1099);
 
             CalculatorServerImpl obj1 = new CalculatorServerImpl();
