@@ -11,7 +11,10 @@ public class TicTacToe extends UnicastRemoteObject implements TicTacToeInt  {
     public void setPlayer(TicTacToeInt player) throws RemoteException { }
 
     @Override
-    public void setMove(int x, int y) throws RemoteException { }
+    public int getId() throws RemoteException { return -1; }
+
+    @Override
+    public void setMove(int x, int y, int id) throws RemoteException { }
 
     @Override
     public void displayTurn(String turn) throws RemoteException {
